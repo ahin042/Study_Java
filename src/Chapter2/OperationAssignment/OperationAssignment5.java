@@ -3,7 +3,7 @@ package Chapter2.OperationAssignment;
 public class OperationAssignment5 {
     public static void main(String[] args) {
         int x = 17;
-        String r = "";
+        String r;
         if (x % 2 == 1) {
             r = "홀수";
         } else {
