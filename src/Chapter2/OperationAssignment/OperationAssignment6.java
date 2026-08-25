@@ -9,8 +9,7 @@ public class OperationAssignment6 {
         double avg = (double) total / 3;
         boolean pass = (avg >= 80);
         System.out.println("합계: " + total);
-        System.out.print("평균 ");
-        System.out.printf("%.1f",avg);
+        System.out.printf("평균 %.1f",avg);
         System.out.println();
         System.out.println(pass?"결과: 통과":"결과: 미통과");
     }
