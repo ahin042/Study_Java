@@ -9,6 +9,6 @@ public class OperationAssignment5 {
         } else {
             r  = "짝수";
         }
-        System.out.println("결과 " + x + "은 " + r + "입니다");
+        System.out.println(x + "은 " + r + "입니다");
     }
 }

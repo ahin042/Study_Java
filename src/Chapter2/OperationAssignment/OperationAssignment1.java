@@ -7,9 +7,6 @@ public class OperationAssignment1 {
         double val3 = 6.5;
         double sum = val1 + val2 + val3;
         double avg = sum / 3;
-        System.out.print("합계: ");
-        System.out.printf("%.1f",sum);
-        System.out.print("평균: ");
-        System.out.printf("%.1f",avg);
+        System.out.printf("합계: %.1f\n평균: %.1f", sum, avg);
     }
 }
