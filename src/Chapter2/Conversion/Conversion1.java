@@ -1,4 +1,4 @@
-package Chapter2;
+package Chapter2.Conversion;
 
 public class Conversion1 {
     public static void main(String[] args) {

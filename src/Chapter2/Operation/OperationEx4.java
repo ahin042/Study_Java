@@ -1,6 +1,6 @@
-package Chapter2;
+package Chapter2.Operation;
 
-public class Operation4 {
+public class OperationEx4 {
     public static void main(String[] args) {
         int fatherAge = 45;
         int motherAge = 47;
