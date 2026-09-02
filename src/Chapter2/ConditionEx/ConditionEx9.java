@@ -5,6 +5,7 @@ public class ConditionEx9 {
         int num1 = 20;
         int num2 = 5;
         char op = '/';
+
         int result = switch (op) {
             case '+' -> num1 + num2;
             case '-' -> num1 - num2;
