@@ -8,7 +8,7 @@ public class ArrayCopy {
         System.arraycopy(array1,0,array2,1,4);
 
         for (int i = 0; i < array2.length; i++) {
-            System.out.println(array2);
+            System.out.println(array2[i]);
         }
     }
 }
