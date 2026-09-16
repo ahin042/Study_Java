@@ -5,7 +5,9 @@ public class FuntionTest {
         int num1 = 10;
         int num2 = 20;
 
-        System.out.println(add(num1, num2));
+//        int sum = add(num1,num2);
+//        System.out.println(sum);
+        System.out.printf("%d + %d = %d입니다",num1,num2,add(num1, num2));
     }
 
     public static int add(int n1, int n2) {
