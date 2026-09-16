@@ -1,0 +1,15 @@
+package classpart;
+
+public class FuntionTest {
+    public static void main(String[] args) {
+        int num1 = 10;
+        int num2 = 20;
+
+        System.out.println(add(num1, num2));
+    }
+
+    public static int add(int n1, int n2) {
+        int result = n1 + n2;
+        return result;
+    }
+}
