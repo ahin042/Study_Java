@@ -1,0 +1,7 @@
+package constructor;
+
+public class Person {
+    String name;
+    int height;
+    int weight;
+}
