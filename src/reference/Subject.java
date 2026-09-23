@@ -8,7 +8,7 @@ public class Subject {
         subjectName = sName;
     }
 
-    public void serScorePoint(int scorePoint) {
+    public void setScorePoint(int scorePoint) {
         this.scorePoint = scorePoint;
     }
 
