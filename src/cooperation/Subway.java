@@ -1,17 +1,22 @@
 package cooperation;
 
 public class Subway {
-    private int lineNumber; // 노선 번호
-    private int passengerCount; // 승객 수
-    private int money; // 지하철 수입
+    String lineNumber;
+    int passengerCount;
+    int money;
 
-    public Subway(int lineNumber, int passengerCount, int money) {
+    public Subway (String lineNumber) {
         this.lineNumber = lineNumber;
-        this.passengerCount = passengerCount;
-        this.money = money;
     }
 
-    public Subway(int lineNumber) {
-        this.lineNumber = lineNumber;
+    public void take() {
+        this.money += 1500;
+        passengerCount++;
+    }
+
+    public void showInfo() {
+        System.out.println(lineNumber + "의 승객은 "
+                + passengerCount + "명이고, 수입은 "
+                + money + "입니다.");
     }
 }
