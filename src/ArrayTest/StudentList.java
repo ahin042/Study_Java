@@ -11,8 +11,7 @@ public class StudentList {
         int i = 1101;
 
         for (String n : name) {
-            studentlist.add(new Student(n, i));
-            i++;
+            studentlist.add(new Student(n, i++));
         }
 
         for (Student s : studentlist) {
