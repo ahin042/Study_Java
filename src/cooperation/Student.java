@@ -13,7 +13,6 @@ public class Student {
     public void getBus(Bus bus) {
         bus.take();
         this.money -= 1000;
-
     }
 
     public void getSubway(Subway subway) {
