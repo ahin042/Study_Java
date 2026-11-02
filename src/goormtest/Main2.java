@@ -31,8 +31,8 @@ class VendingMachine {
 public class Main2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        VendingMachine vendingMachine = new VendingMachine("콜라", 1500, 10);
-        vendingMachine.sell(scanner.nextInt());
-        vendingMachine.showInfo();
+        VendingMachine machine = new VendingMachine("콜라", 1500, 10);
+        machine.sell(scanner.nextInt());
+        machine.showInfo();
     }
 }
