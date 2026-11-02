@@ -14,18 +14,18 @@ class VendingMachine {
     }
 
     public void sell(int num) {
-        if (num < 1) {
-            System.out.println("음료를 판매할 수 없습니다");
-        } else {
+        if (num > 0 && num <= stock) {
             stock -= num;
+        } else {
+            System.out.println("음료를 판매할 수 없습니다.");
         }
     }
 
     public void showInfo() {
         System.out.println("==판매 후==");
         System.out.println("음료 이름: " + name);
-        System.out.println("가격: " + price);
-        System.out.println("남은 재고: " + stock);
+        System.out.println("가격: " + price + "원");
+        System.out.println("남은 재고: " + stock + "개");
     }
 }
 public class Main2 {
