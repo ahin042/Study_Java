@@ -32,7 +32,6 @@ class Car {
         System.out.println("차종: " + carType);
         System.out.println("1일 대여 요금: " + dailyPrice);
         System.out.println("대여 상태: " + rented);
-        System.out.println();
     }
 }
 
