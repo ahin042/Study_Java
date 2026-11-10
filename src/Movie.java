@@ -4,6 +4,7 @@ class BankAccount {
     private String id;
     private String name;
     private int money;
+    private String[] messages = {"입금", "출금", "이체"};
 
     public BankAccount(String id, String name, int money) {
         this.id = id;
