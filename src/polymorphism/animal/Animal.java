@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphism.animal;
 
 public class Animal {
     public void move() {

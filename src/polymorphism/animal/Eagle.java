@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphism.animal;
 
 public class Eagle extends Animal {
     @Override
