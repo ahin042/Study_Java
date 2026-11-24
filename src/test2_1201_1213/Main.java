@@ -196,7 +196,7 @@ public class Main {
             return;
         }
 
-        String t = ask("1. 뜻을 보고 영어 단어 맞히 \n2. 영어 단어 보고 뜻 맞히기\n시험 유형을 선택하세요: ");
+        String t = ask("1. 뜻을 보고 영어 단어 맞히기 \n2. 영어 단어 보고 뜻 맞히기\n시험 유형을 선택하세요: ");
         Quiz q = t.equals("1") ? new EnglishQuiz(words, wrongs) : t.equals("2") ? new MeaningQuiz(words, wrongs) : null;
 
         if (q == null) {
