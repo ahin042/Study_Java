@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     //변수
-    private static ArrayList<String[]> words = new ArrayList<>();
-    private static ArrayList<String[]> wrongs = new ArrayList<>();
+    private static ArrayList<String[]> wordsList = new ArrayList<>();
+    private static ArrayList<String[]> wrongsList = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -55,19 +55,19 @@ public class Main {
         }
 
         for (int i = 1; i <= n; i++)
-            words.add(new String[]{ask(i + "번째 영어 단어: "), ask(i + "번째 한국어 뜻: ")});
+            wordsList.add(new String[]{ask(i + "번째 영어 단어: "), ask(i + "번째 한국어 뜻: ")});
         System.out.println(n + "개의 단어가 등록되었습니다.");
     }
 
     //오답 목록에 있는 단어로 복습 시험 실행
     private static void startReview() {
-        if (wrongs.isEmpty()) {
+        if (wrongsList.isEmpty()) {
             System.out.println("오답 목록이 비어있습니다.");
             return;
         }
 
         String t = ask("1. 뜻을 보고 영어 단어 맞히기\n2. 영어 단어 보고 뜻 맞히기\n복습 시험 유형을 선택하세요: ");
-        Quiz q = t.equals("1") ? new EnglishQuiz(words, wrongs) : t.equals("2") ? new MeaningQuiz(words, wrongs) : null;
+        Quiz q = t.equals("1") ? new EnglishQuiz(wordsList, wrongsList) : t.equals("2") ? new MeaningQuiz(wordsList, wrongsList) : null;
 
         if (q == null) {
             System.out.println("올바른 번호를 입력하세요.");
@@ -78,13 +78,13 @@ public class Main {
     }
 
     private static void runQuiz(boolean test) {
-        if ((test? words : wrongs).isEmpty()) {
+        if ((test? wordsList : wrongsList).isEmpty()) {
             System.out.println(test? "먼저 영어 단어를 등록하세요." : "오답 목록이 비어있습니다.");
             return;
         }
 
         String t = ask("1. 뜻을 보고 영어 단어 맞히기 \n2. 영어 단어 보고 뜻 맞히기\n시험 유형을 선택하세요: ");
-        Quiz q = t.equals("1") ? new EnglishQuiz(words, wrongs) : t.equals("2") ? new MeaningQuiz(words, wrongs) : null;
+        Quiz q = t.equals("1") ? new EnglishQuiz(wordsList, wrongsList) : t.equals("2") ? new MeaningQuiz(wordsList, wrongsList) : null;
 
         if (q == null) {
             System.out.println("올바른 번호를 입력하세요.");
